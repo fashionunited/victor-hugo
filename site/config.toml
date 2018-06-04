@@ -13,7 +13,7 @@ theme = "hugo-fashionunited-theme"
 paginate = 10
 
 
-contentdir = "content/fashionunited.com/pages"
+contentdir = "content/com/pages"
 publishdir = "dist"
 
 
