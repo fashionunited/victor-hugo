@@ -14,20 +14,6 @@ export default {
         test: /\.js?$/,
         exclude: /node_modules/,
         query: {cacheDirectory: true}
-      },
-      {
-        test: /\.scss$/,
-        use: [
-          {
-            loader: "file-loader",
-            options: {
-              name: "bundle.css",
-            },
-          },
-          {loader: "extract-loader"},
-          {loader: "css-loader"},
-          {loader: "sass-loader"},
-        ]
       }
     ]
   },
@@ -40,7 +26,7 @@ export default {
 
   context: path.join(__dirname, "src"),
   entry: {
-    app: ["./js/app", "./css/main.scss"],
+    app: ["./js/app"]
   },
   output: {
     path: path.join(__dirname, "dist"),
