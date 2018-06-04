@@ -1,4 +1,4 @@
-baseurl = "/"
+baseurl = "https://fashionunited.com"
 languageCode = "en-us"
 languageLang = "en"
 title = "My new Victor-Hugo site"
@@ -11,6 +11,11 @@ theme = "hugo-fashionunited-theme"
 
 # Define how many posts should appear on a site
 paginate = 10
+
+
+contentdir = "content/fashionunited.com/pages"
+publishdir = "dist"
+
 
 [params]
 	# To provide some metadata for search engines feel free to add a few
