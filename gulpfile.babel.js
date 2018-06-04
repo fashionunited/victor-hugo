@@ -39,8 +39,10 @@ gulp.task("build-preview", ["css", "js", "fonts"], (cb) => buildSite(cb, hugoArg
 
 gulp.task("css", () => (
   gulp.src("./src/css/*.scss")
-    .pipe(sass().on("error", sass.logError))
-    .pipe(postcss([cssImport({from: "./src/css/main.css"}), cssnext()]))
+    .pipe(sass({
+      includePaths: ["node_modules"]
+    }).on("error", sass.logError))
+    .pipe(postcss([cssImport({from: "./src/css/main.scss"}), cssnext()]))
     .pipe(gulp.dest("./dist/css"))
     .pipe(browserSync.stream())
 ));
