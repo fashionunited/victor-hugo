@@ -1,0 +1,35 @@
+<section class="section--center mdl-grid mdl-grid--no-spacing fu-main-breadcrom" >
+  <div class="mdl-card_supporting-text mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet mdl-cell--hide-tablet mdl-cell--hide-phone fu-main-breadcrom__links">
+    <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+      <a itemprop="url" href="{{if .Site.Params.showBaseUrlPrefix}}{{.Site.Params.baseUrlPrefix}}{{else}}/{{end}}">
+        <span itemprop="title" class="fu-main-breadcrom__links--text">
+          {{ ( index $.Site.Data.translations $.Site.Params.locale ).breadcrumbs.home }}
+        </span>
+        <i class='fu-main-breadcrom__links--icon'></i>
+      </a>
+    </span>
+    <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+      {{ if or (eq .Type "fashion-statistics-ireland") (eq .Type "fashion-statistics-hong-kong") (eq .Type "fashion-statistics-brazil") (eq .Type "fashion_statistics") }}
+        <a itemprop="url" href="{{ ( index $.Site.Data.translations $.Site.Params.locale ).navbar.fashion_dataUrl }}">
+          <span itemprop="title" class="fu-main-breadcrom__links--text">
+            {{ ( index $.Site.Data.translations $.Site.Params.locale ).footer.news.text7 }}
+          </span>
+        </a>
+      {{ else if eq .Type "newsletter_subscribe" }}
+        <a itemprop="url" href="{{ ( index $.Site.Data.translations $.Site.Params.locale ).navbar.newsletterUrl }}">
+          <span itemprop="title" class="fu-main-breadcrom__links--text">
+            {{ ( index $.Site.Data.translations $.Site.Params.locale ).navbar.newsletter }}
+          </span>
+        </a>
+      {{ else }}
+       <a itemprop="url" href="{{ ( index $.Site.Data.translations $.Site.Params.locale ).url }}">
+          <span itemprop="title" class="fu-main-breadcrom__links--text">
+            {{ ( index $.Site.Data.translations $.Site.Params.locale ).breadcrumbs.jobs }}
+          </span>
+        </a>
+      {{ end }}
+    </span>
+  </div>
+  <div class="mdl-card_supporting-text mdl-cell mdl-cell--6-col mdl-cell--8-col-tablet fu-main-social__icon">
+  </div>
+</section>

@@ -1,0 +1,33 @@
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="robots" content="index, follow">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="FashionUnited">
+  <!-- meta desc & title -->
+  <title>{{.Title}}</title>
+  <meta name="description" content="{{.Description}}" />
+  <!-- Opengraph  -->
+  <meta property="og:type" content="article"/>
+  <meta property="og:title" content="{{.Title}}" />
+  <meta property="og:url" content="{{.RelPermalink}}" />
+  <meta property="og:image" content="/global-assets/img/default/fu-default_1200x630_black-favicon.jpg" />
+  <meta property="og:description" content="{{.Description}}" />
+  <!-- Twitter  -->
+  <meta name="twitter:card" content="{{ ( index $.Site.Data.translations $.Site.Params.locale ).twitter.card }}">
+  <meta name="twitter:site" content="{{ ( index $.Site.Data.translations $.Site.Params.locale ).twitter.site }}">
+  <meta name="twitter:title" content="{{.Title}}">
+  <meta name="twitter:description" content="{{.Description}}">
+  <meta name="twitter:creator" content="{{ ( index $.Site.Data.translations $.Site.Params.locale ).twitter.creator }}">
+  <meta name="twitter:image:src" content="{{ ( index $.Site.Data.translations $.Site.Params.locale ).twitter.image }}">
+  <link href="/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+  <!-- Add to homescreen for Chrome on Android -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <link rel="icon" sizes="192x192" href="/global-assets/fu20164/dist/landing/images/android-desktop.png">
+  <!-- Add to homescreen for Safari on iOS -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="FashionUnited Job Board">
+  <link rel="apple-touch-icon-precomposed" href="/global-assets/fu20164/dist/images/apple-touch-icon-precomposed.png">
+  <!-- Add to homescreen for IE -->
+  <meta name="msapplication-TileImage" content="/global-assets/fu20164/dist/images/favicon.png">
+  <meta name="msapplication-TileColor" content="#000000">

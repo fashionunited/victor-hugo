@@ -1,0 +1,17 @@
+<div class="container fu-main-container">
+  <div class="mdl-grid">
+    <div class="mdl-cell mdl-cell--12-col">
+      <div class="item-page">
+        <div class="mdl-grid">
+          <div class="mdl-cell mdl-cell--12-col">
+            {{ .Render "breadcrumb" }}
+          </div>
+        </div>
+        <meta itemprop="inLanguage" content="{{ .Site.LanguageCode }}">
+        <span>
+          {{ .Content }}
+        </span>
+      </div>
+    </div>
+  </div>
+</div>

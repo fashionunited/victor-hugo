@@ -1,0 +1,16 @@
+  {{ if .Site.Params.joomlaNavBar }}
+    <link rel="stylesheet" href="/global-assets/fu20164/dist/landing/styles/main.css?{{ .Now.Unix }}">
+    {{ if or (eq .Site.Params.locale "es-PE") (eq .Site.Params.locale "es-AR") (eq .Site.Params.locale "es-CO") (eq .Site.Params.locale "es-CL") (eq .Site.Params.locale "en-IN") (eq .Site.Params.locale "en-GB") }}
+      <link rel="stylesheet" href="/global-assets/fu20164/dist/landing/styles/fu-navbar.css?{{ .Now.Unix }}">
+      <link rel="stylesheet" href="/global-assets/fu20164/dist/landing/styles/fu-fashion_statistics.css?{{ .Now.Unix }}">
+      <link rel="stylesheet" href="/global-assets/fu20164/dist/landing/styles/fu-accordion.css?{{ .Now.Unix }}">
+      <link rel="stylesheet" href="/global-assets/fu20164/dist/landing/styles/fu-newsletter.css?{{ .Now.Unix }}">
+    {{ end }}
+  {{ else }}
+    <link href="https://cdn-images.mailchimp.com/embedcode/slim-081711.css?{{ .Now.Unix }}" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="/global-assets/fu20164/dist/landing/styles/main.css?{{ .Now.Unix }}">
+    <link rel="stylesheet" href="/global-assets/fu20164/dist/landing/styles/fu-navbar.css?{{ .Now.Unix }}">
+    <link rel="stylesheet" href="/global-assets/fu20164/dist/landing/styles/fu-fashion_statistics.css?{{ .Now.Unix }}">
+    <link rel="stylesheet" href="/global-assets/fu20164/dist/landing/styles/fu-accordion.css?{{ .Now.Unix }}">
+    <link rel="stylesheet" href="/global-assets/fu20164/dist/landing/styles/fu-newsletter.css?{{ .Now.Unix }}">
+  {{ end }}

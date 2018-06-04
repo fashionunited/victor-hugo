@@ -1,0 +1,44 @@
+baseurl = "fashionunited.com"
+languageCode = "en"
+contentdir = "content/JobBoard_landing_pages_COM/pages"
+publishdir = "dist/fashionunited.com"
+buildDrafts = false
+buildFuture = true
+[permalinks]
+  page = "/:slug/"
+[params]
+  locale = "en-US"
+  joomlaNavBar = true
+  showAdsTop = true
+  showAdsSide = true
+  showWFB = true
+  wfbCode = "COM"
+  adUnitLeft = "com/jobsLandingPage_left"
+  adUnitRight = "com/jobsLandingPage_right"
+  adUnitTop = "com/jobsLandingPage_top"
+  adUnitTopMobile = "com/jobsLandingPage_top_mobile"
+[params.visualLanding]
+  headerTitle = "Find your fashion job"
+  searchForJobs = "Search for Jobs"
+  AllCategories = "All categories"
+  labelCategories = "Job categories"
+  labelCategorie1 = "Retail Management & Instore"
+  labelCategorie2 = "Sales & Marketing"
+  labelCategorie3 = "Design & Creative"
+  labelCategorie4 = "Product & Supply Chain"
+  labelCategorie5 = "Other Jobs"
+  labelCategorie6 = "Internships & Traineeships"
+  labelLatestJobs = "Latest jobs"
+  buttonPostJob = "Post a job"
+  buttonFashionCareers = "Fashion careers"
+  buttonMoreJobs = "More jobs"
+  linkToJobboard = "/fashion-jobs"
+  linkToCategorieAll = "/fashion-jobs"
+  linkToCategorieRetail = "/fashion-jobs/retail-management-and-in-store"
+  linkToCategorieSales = "/fashion-jobs/sales-and-marketing"
+  linkToCategorieDesign = "/fashion-jobs/design-and-creative"
+  linkToCategorieProduct = "/fashion-jobs/product-and-supply-chain"
+  linkToCategorieOther = "/fashion-jobs/other"
+  linkToCategorieInternships = "/fashion-jobs/internships"
+  linkToPostJob = "/submit-your-job-postings"
+  linkToFashionCareers = "/fashion-jobs"

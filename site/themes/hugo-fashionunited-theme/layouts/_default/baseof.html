@@ -1,0 +1,26 @@
+{{ partial "head" . }}
+			<body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
+					{{ partial "googleTagManagerNoScript.html" . }}
+
+					{{ partial "header" . }}
+
+								{{ "<!-- Main -->" | safeHTML }}
+								<div id="main">
+									{{ block "main" . }}{{ end }}
+								</div>
+
+							</div>
+							<div class="mdl-layout__obfuscator"></div>
+						</div>
+					</div>
+					{{ partial "scripts.html" . }}
+		
+		
+
+		{{ partial "footer" . }}
+	</body>
+</html>
+
+
+
+

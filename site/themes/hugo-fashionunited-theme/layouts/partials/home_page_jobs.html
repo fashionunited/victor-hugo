@@ -1,0 +1,24 @@
+<p>
+  FashionUnited is an independent international B2B fashion platform. Globally active, the website reaches more than 1.6 million industry professionals per month.
+</p>
+<P>
+  At FashionUnited we strive for more fun and efficiency in fashion! That’s why we created a one-stop-shop platform where visitors can find the latest fashion news, a career center, an events calendar, an article archive, various trade statistics, employer branding pages and more.
+</P>
+<p>
+  FashionUnited believes that sharing is caring. This is why we created the FashionUnited Network, where fashion professionals can connect, discuss and share ideas. Our Fashion Education Network gives future fashion professionals all the information they need while taking their first steps in the fashion world.
+</p>
+<p>
+  Besides fun and efficiency, we like convenience. Therefore fashion professionals can browse their local website in their native language, without getting lost in translation.
+</p>
+
+{{ if or (eq .Site.Params.locale "en-IE") (eq .Site.Params.locale "sv-SE") (eq .Site.Params.locale "cs-CZ") (eq .Site.Params.locale "da-DK") (eq .Site.Params.locale "fi-FI") (eq .Site.Params.locale "nb-NO") (eq .Site.Params.locale "pt-PT") (eq .Site.Params.locale "pl-PL") (eq .Site.Params.locale "tr-TR") (eq .Site.Params.locale "pt-BR") (eq .Site.Params.locale "de-AT") (eq .Site.Params.locale "fr-LU") }}
+  <h2>
+    Check the latest jobs of the Top Fashion Industries
+  </h2>
+  <p>
+    <div class="fu-accordion-list">
+      <div id="fu-embed-jobs" class="fu-embed-jobs" data-locales="{{ .Site.Params.locale }}" data-component="CompanyJobs"></div>
+      <script src="/global-assets/jobs-embed/embed.js" async></script>
+    </div>
+  </p>
+{{ end }}

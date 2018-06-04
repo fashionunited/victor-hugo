@@ -1,0 +1,22 @@
+<div class="fu-background-gradient">
+  <div class="fu-grid-section">
+    <div class="mdl-typography--text-center">
+      <h2 class="fu-main-section-title mdl-cell mdl-cell--12-col">
+        {{$.Site.Params.visualLanding.labelLatestJobs}}
+      </h2>
+    </div>
+    <div
+    class="fu-embed-jobs"
+    data-locales="{{$.Site.Params.locale}}"
+    data-component="HomePageJobs"
+    data-limit="5"
+    >
+  </div>
+  <script src="https://fashionunited.com/global-assets/jobs-embed/embed.js" async></script>
+</div>
+<section class="mdl-grid">
+  <div class="mdl-cell mdl-cell--12-col fu-visual-landing-button-container">
+    <a href="{{$.Site.Params.visualLanding.linkToJobboard}}" class="fu-search-box--button">{{$.Site.Params.visualLanding.buttonMoreJobs}}</a>
+  </div>
+</section>
+</div>

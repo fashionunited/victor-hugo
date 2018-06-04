@@ -1,0 +1,104 @@
+<header class="mdl-layout__header">
+  <div class="mdl-layout__drawer-button">
+    <i class="fu-material-icons fu-menu">
+    </i>
+  </div>
+  <div class="mdl-layout__header-row">
+    <span class="mdl-layout-title">
+      <a href="{{if .Site.Params.showBaseUrlPrefix}}{{.Site.Params.baseUrlPrefix}}{{else}}/{{end}}">
+        <img class="fu-nav-logo" src="/global-assets/fu20164/dist/images/fu-logo/fashionunited_logo.svg" width="168" height="18" title="FashionUnited" alt="FashionUnited">
+      </a>
+    </span>
+    <div class="mdl-layout-spacer"></div>
+    <nav class="mdl-navigation fu-main-navbar mdl-layout--large-screen-only">
+      <a class="mdl-navigation__link" href="{{if .Site.Params.showBaseUrlPrefix}}{{.Site.Params.baseUrlPrefix}}{{else}}/{{end}}">{{ ( index $.Site.Data.translations $.Site.Params.locale ).navbar.news }}</a>
+      <a class="mdl-navigation__link" href="{{ ( index $.Site.Data.translations $.Site.Params.locale ).url }}">{{ ( index $.Site.Data.translations $.Site.Params.locale ).navbar.jobs }}</a>
+
+      {{ if .Site.Params.joomlaNavBar }}
+      {{ if not (in .Site.Params.locale "en-GB")}}
+        <a class="mdl-navigation__link" href="{{ ( index $.Site.Data.translations $.Site.Params.locale ).navbar.eventsUrl }}">{{ ( index $.Site.Data.translations $.Site.Params.locale ).navbar.events }}</a>
+        <a class="mdl-navigation__link" href="{{ ( index $.Site.Data.translations $.Site.Params.locale ).navbar.dataUrl }}">{{ ( index $.Site.Data.translations $.Site.Params.locale ).navbar.data }}</a>
+      {{ else }}
+        <a class="mdl-navigation__link" href="{{ ( index $.Site.Data.translations $.Site.Params.locale ).navbar.eventsUrl }}">{{ ( index $.Site.Data.translations $.Site.Params.locale ).navbar.events }}</a>
+        <button id="fu-menu-lower-right" class="mdl-button fu-navbar-dropdown-no-bgcolor mdl-js-button mdl-navigation__link fu-nav-header--button">{{ ( index $.Site.Data.translations $.Site.Params.locale ).navbar.data }}</button>
+        <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect fu-nav-header--button__dropdown"
+        for="fu-menu-lower-right">
+          <li class="mdl-menu__item"><a href="{{ ( index $.Site.Data.translations $.Site.Params.locale ).navbar.business_dataUrl }}">{{ ( index $.Site.Data.translations $.Site.Params.locale ).navbar.business_data }}</a>
+          </li>
+          <li class="mdl-menu__item mdl-menu__item--full-bleed-divider"><a href="{{ ( index $.Site.Data.translations $.Site.Params.locale ).navbar.fashion_dataUrl }}">{{ ( index $.Site.Data.translations $.Site.Params.locale ).navbar.fashion_data }}</a></li>
+          <li class="mdl-menu__item mdl-menu__item--full-bleed-divider"><a href="{{ ( index $.Site.Data.translations $.Site.Params.locale ).navbar.top100_dataUrl }}">{{ ( index $.Site.Data.translations $.Site.Params.locale ).navbar.top100_data }}</a></li>
+        </ul>
+      {{ end }}
+      {{ end }}
+
+      <!-- Business Intellingence Menu -->
+
+      {{ if or (eq .Site.Params.locale "en-HU") (eq .Site.Params.locale "sv-SE") (eq .Site.Params.locale "cs-CZ") (eq .Site.Params.locale "da-DK") (eq .Site.Params.locale "fi-FI") (eq .Site.Params.locale "en-JP") (eq .Site.Params.locale "nb-NO") (eq .Site.Params.locale "pt-PT") (eq .Site.Params.locale "pl-PL") (eq .Site.Params.locale "tr-TR") }}
+        <a class="mdl-navigation__link" href="{{ ( index $.Site.Data.translations $.Site.Params.locale ).navbar.business_dataUrl }}">{{ ( index $.Site.Data.translations $.Site.Params.locale ).navbar.data }}</a>
+      {{ else if or (eq .Site.Params.locale "en-IE") (eq .Site.Params.locale "zh-HK") (eq .Site.Params.locale "pt-BR") (eq .Site.Params.locale "de-AT") (eq .Site.Params.locale "fr-LU")}}
+        <button id="fu-menu-lower-right" class="mdl-button fu-navbar-dropdown-no-bgcolor mdl-js-button mdl-navigation__link fu-nav-header--button">{{ ( index $.Site.Data.translations $.Site.Params.locale ).navbar.data }}</button>
+        <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect fu-nav-header--button__dropdown"
+        for="fu-menu-lower-right">
+          <li class="mdl-menu__item"><a href="{{ ( index $.Site.Data.translations $.Site.Params.locale ).navbar.business_dataUrl }}">{{ ( index $.Site.Data.translations $.Site.Params.locale ).navbar.business_data }}</a>
+          </li>
+          <li class="mdl-menu__item mdl-menu__item--full-bleed-divider"><a href="{{ ( index $.Site.Data.translations $.Site.Params.locale ).navbar.fashion_dataUrl }}">{{ ( index $.Site.Data.translations $.Site.Params.locale ).navbar.fashion_data }}</a></li>
+        </ul>
+      {{ end }}
+      {{ if .Site.Params.joomlaNavBar  }}
+        <a class="mdl-navigation__link" href="{{ ( index $.Site.Data.translations $.Site.Params.locale ).navbar.trendsUrl }}">{{ ( index $.Site.Data.translations $.Site.Params.locale ).navbar.trends }}</a>
+        {{ end }}
+      <a href="{{ ( index $.Site.Data.translations $.Site.Params.locale ).navbar.newsletterUrl }}" class="mdl-navigation__link mdl-navigation__link--icon newsletter">
+        <i class="icon material-icons" role="presentation">mail</i>
+      </a>
+
+    </nav>
+  </div>
+</header>
+<div class="mdl-layout__drawer">
+  <header class="drawer-header">
+    <a href="{{if .Site.Params.showBaseUrlPrefix}}{{.Site.Params.baseUrlPrefix}}{{else}}/{{end}}">
+      <img src="/global-assets/fu20164/dist/images/fu-logo/fashionunited_logo.svg" width="168" height="18" title="" alt="FashionUnited">
+    </a>
+  </header>
+  <nav class="mdl-navigation">
+    <a class="mdl-navigation__link" href="{{if .Site.Params.showBaseUrlPrefix}}{{.Site.Params.baseUrlPrefix}}{{else}}/{{end}}"><i class="fu-material-icons fu-news" role="presentation"></i>{{ ( index $.Site.Data.translations $.Site.Params.locale ).navbar.news }}</a>
+    <a class="mdl-navigation__link" href="{{ ( index $.Site.Data.translations $.Site.Params.locale ).url }}"><i class="fu-material-icons fu-work" role="presentation"></i>{{ ( index $.Site.Data.translations $.Site.Params.locale ).navbar.jobs }}</a>
+
+    {{ if .Site.Params.joomlaNavBar }}
+    {{ if not (in .Site.Params.locale "en-GB")}}
+      <a class="mdl-navigation__link" href="{{ ( index $.Site.Data.translations $.Site.Params.locale ).navbar.eventsUrl }}"><i class="fu-material-icons fu-event" role="presentation"></i>{{ ( index $.Site.Data.translations $.Site.Params.locale ).navbar.events }}</a>
+      <a class="mdl-navigation__link" href="{{ ( index $.Site.Data.translations $.Site.Params.locale ).navbar.dataUrl }}"><i class="fu-material-icons fu-data" role="presentation"></i>{{ ( index $.Site.Data.translations $.Site.Params.locale ).navbar.data }}</a>
+      {{ else }}
+      <a class="mdl-navigation__link" href="{{ ( index $.Site.Data.translations $.Site.Params.locale ).navbar.eventsUrl }}"><i class="fu-material-icons fu-event" role="presentation"></i>{{ ( index $.Site.Data.translations $.Site.Params.locale ).navbar.events }}</a>
+      <div id="fu-menu-mobile-right" class="mdl-button mdl-js-button mdl-navigation__link"><i class="fu-material-icons fu-data" role="presentation"></i>{{ ( index $.Site.Data.translations $.Site.Params.locale ).navbar.data }}</div>
+      <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect fu-nav-mobile__dropdown"
+      for="fu-menu-mobile-right">
+        <li class="mdl-menu__item"><a href="{{ ( index $.Site.Data.translations $.Site.Params.locale ).navbar.business_dataUrl }}">{{ ( index $.Site.Data.translations $.Site.Params.locale ).navbar.business_data }}</a></li>
+        <li class="mdl-menu__item mdl-menu__item--full-bleed-divider"><a href="{{ ( index $.Site.Data.translations $.Site.Params.locale ).navbar.fashion_dataUrl }}">{{ ( index $.Site.Data.translations $.Site.Params.locale ).navbar.fashion_data }}</a></li>
+        <li class="mdl-menu__item mdl-menu__item--full-bleed-divider"><a href="{{ ( index $.Site.Data.translations $.Site.Params.locale ).navbar.top100_dataUrl }}">{{ ( index $.Site.Data.translations $.Site.Params.locale ).navbar.top100_data }}</a></li>
+      </ul>
+      {{ end }}
+    {{ end }}
+
+    <!-- Business Intellingence Menu -->
+
+    {{ if or (eq .Site.Params.locale "en-HU") (eq .Site.Params.locale "sv-SE") (eq .Site.Params.locale "cs-CZ") (eq .Site.Params.locale "da-DK") (eq .Site.Params.locale "fi-FI") (eq .Site.Params.locale "en-JP") (eq .Site.Params.locale "nb-NO") (eq .Site.Params.locale "pt-PT") (eq .Site.Params.locale "pl-PL") (eq .Site.Params.locale "tr-TR") }}
+      <a class="mdl-navigation__link" href="{{ ( index $.Site.Data.translations $.Site.Params.locale ).navbar.business_dataUrl }}"><i class="fu-material-icons fu-data" role="presentation"></i>{{ ( index $.Site.Data.translations $.Site.Params.locale ).navbar.data }}</a>
+    {{ else if or (eq .Site.Params.locale "en-IE") (eq .Site.Params.locale "zh-HK") (eq .Site.Params.locale "pt-BR") (eq .Site.Params.locale "de-AT") (eq .Site.Params.locale "fr-LU") }}
+       <div id="fu-menu-mobile-right" class="mdl-button mdl-js-button mdl-navigation__link"><i class="fu-material-icons fu-data" role="presentation"></i>{{ ( index $.Site.Data.translations $.Site.Params.locale ).navbar.data }}</div>
+        <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect fu-nav-mobile__dropdown"
+        for="fu-menu-mobile-right">
+          <li class="mdl-menu__item"><a href="{{ ( index $.Site.Data.translations $.Site.Params.locale ).navbar.business_dataUrl }}">{{ ( index $.Site.Data.translations $.Site.Params.locale ).navbar.business_data }}</a></li>
+          <li class="mdl-menu__item mdl-menu__item--full-bleed-divider"><a href="{{ ( index $.Site.Data.translations $.Site.Params.locale ).navbar.fashion_dataUrl }}">{{ ( index $.Site.Data.translations $.Site.Params.locale ).navbar.fashion_data }}</a></li>
+        </ul>
+    {{ end }}
+    {{ if .Site.Params.joomlaNavBar }}
+      <a class="mdl-navigation__link" href="{{ ( index $.Site.Data.translations $.Site.Params.locale ).navbar.trendsUrl }}">
+        <i class="fu-material-icons fu-trend" role="presentation"></i>{{ ( index $.Site.Data.translations $.Site.Params.locale ).navbar.trends }}
+      </a>
+    {{ end }}
+    <a href="{{ ( index $.Site.Data.translations $.Site.Params.locale ).navbar.newsletterUrl }}" class="mdl-navigation__link">
+      <i class="icon material-icons" role="presentation">mail</i>{{ ( index $.Site.Data.translations $.Site.Params.locale ).navbar.newsletter }}
+    </a>
+  </nav>
+</div>

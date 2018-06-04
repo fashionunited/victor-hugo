@@ -1,0 +1,23 @@
+<section class="fu-main-header section--center mdl-grid mdl-grid--no-spacing">
+  <div class="mdl-card_supporting-text mdl-cell mdl-cell--12-col">
+    <div class="fu-main-header--text">
+      <header>
+        <h1 itemprop="name">
+          {{ if or (eq .Type "fashion-statistics-ireland") (eq .Type "fashion-statistics-hong-kong") (eq .Type "fashion-statistics-brazil") (eq .Type "fashion_statistics")}}
+            <a href="{{ ( index $.Site.Data.translations $.Site.Params.locale ).navbar.fashion_dataUrl }}" itemprop="url">
+              {{ ( index $.Site.Data.translations $.Site.Params.locale ).metaData.fashion_Statistics_title }}
+            </a>
+          {{ else if eq .Type "newsletter_subscribe" }}
+            <a href="{{ ( index $.Site.Data.translations $.Site.Params.locale ).navbar.newsletterUrl }}" itemprop="url">
+              {{ ( index $.Site.Data.translations $.Site.Params.locale ).categories.newsletter.template_title }}
+            </a>
+          {{ else }}
+            <a href="{{ ( index $.Site.Data.translations $.Site.Params.locale ).url }}" itemprop="url">
+              {{.Title}}
+            </a>
+          {{ end }}
+        </h1>
+      </header>
+    </div>
+  </div>
+</section>
