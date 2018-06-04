@@ -1,0 +1,148 @@
+title = "Bolsa de trabajo en moda"
+prefix = "/ofertas-trabajo-moda"
+url = "/bolsa-de-trabajo-en-moda"
+[breadcrumbs]
+  home = "Home"
+  jobs = "Bolsa de trabajo en moda"
+[metaData]
+  description = "Bolsa de trabajo en moda. Encontrarás múltiples trabajos en moda, como diseñador, encargado de ventas"
+[openGraph]
+  type = "article"
+  title = "Bolsa de trabajo en moda"
+  image = "/global-assets/img/default/fu-default_1200x630_black-favicon.jpg"
+  description = "Start your new professional life here. Many Fashion Jobs and opportunities like, designer, merchandiser, sales manager, technologist, store manager, sales, creative director, production executive, buyer, retail fashion manager, agent, import m"
+[twitter]
+  card = "summary"
+  site = "@FashionUnited"
+  title = "Bolsa de trabajo en moda"
+  creator = "@javdl"
+  image = "/global-assets/img/default/fu-default_1200x630_black-favicon.jpg"
+  description = "Start your new professional life here. Many Fashion Jobs and opportunities like, designer, merchandiser, sales manager, technologist, store manager, sales, creative director, production executive, buyer, retail fashion manager, agent, import m"
+[wfb]
+  wfbTitle = "El 80% de las principales empresas de moda encuentran a sus empleados a través de FashionUnited. Estas son algunas de ellas:"
+  data_dimensions = "150x50"
+[categories]
+  [categories.retail_management_and_in_store]
+    title = "RETAIL MANAGEMENT & IN-STORE FASHION JOBS"
+    p_tag = "store manager, sales associate, (visual) merchandiser, assistant manager, supervisor"
+    url = "/retail-management-and-in-store"
+  [categories.sales_and_marketing]
+    title = "SALES & MARKETING JOBS IN FASHION"
+    p_tag = "account manager, marketing manager, sales manager, e-commerce, merchandising"
+    url = "/sales-and-marketing"
+  [categories.design_and_creative]
+    title = "DESIGN & CREATIVE JOBS IN FASHION"
+    p_tag = "designer, graphic designer, machinist, pattern cutter, stylist"
+    url = "/design-and-creative"
+  [categories.product_and_supply_chain]
+    title = "PRODUCT & SUPPLY CHAIN JOBS IN FASHION"
+    p_tag = "buyer, production coordinator, quality controller, supply chain manager"
+    url = "/product-and-supply-chain"
+  [categories.other]
+    title = "OTHER JOBS IN FASHION"
+    p_tag = "receptionist, accountant, finance manager, editor, office manager, HR manager"
+    url = "/other"
+  [categories.internships]
+    title = "INTERNSHIPS & TRAINEESHIPS"
+    p_tag = "design, product development, marketing, social media, merchandising, editorial"
+    url = "/internships"
+  [categories.international_fashion_jobs]
+    title = "Trabajos Internacionales"
+    p_tag = "Austria, Bélgica, China, Francia, Alemania, India, Italia, Países Bajos, Rusia, Escandinavia, España, Suiza, Reino Unido, Estados Unidos"
+    url = "http://www.fashionunited.es/trabajos-internacionales"
+  [categories.all_categories]
+    title = "busca trabajo"
+    p_title = "Busca trabajo en moda"
+    p_tag = "director de firma, director de tienda, vendedor, (visual) merchandiser de tienda, director adjunto, supervisor"
+    url = "/todas-las-categorias"
+  [categories.post_job]
+    title = "Publicar trabajos"
+    p_tag = "Publique una oferta laboral en FashionUnited"
+    url = "/ponga-su-anuncio"
+  [categories.newsletter]
+    title = "Noticias"
+    p_tag = "inscripción gratuita al boletín de noticias"
+    url = "/suscripcion-al-boletin-de-noticias"
+  [categories.careers_fashion]
+    title = "Trabajos en moda"
+    p_tag = "averigua en qué consisten todos los trabajos"
+    url = "/informacion-sobre-el-trabajo-en-la-moda"
+  [categories.job_profile]
+    title = "CREATE ONLINE PROFILE"
+    p_tag = "create an online profile and connect with other fashion professionals"
+    url = "https://www.fashionunited.com/Register_your_CV_and_profile_200808080917/"
+[navbar]
+  news = "Noticias"
+  jobs = "Trabajos"
+  events = "Eventos"
+  eventsUrl = "/events"
+  data = "Data"
+  dataUrl = "https://fashionunited.com/i"
+  trends = "Trends"
+  trendsUrl = "/trends"
+  newsletter = "Newsletter"
+  newsletterUrl = "/newsletter-subscribe"
+[footer]
+  [footer.main]
+    content = '<div><header><p>* El contenido de ofertas de trabajo en FashionUnited</p><p>Las ofertas de trabajo de moda que figuran en los resultados de búsqueda de FashionUnited, o vinculados desde esos resultados, pueden haber sido creados por personas sobre las que FashionUnited no ejerce control alguno. Los resultados de ofertas de empleo que figuran como resultados de la búsqueda de empleo se indexan de forma automatizada y FashionUnited no filtra los resultados de dicha búsqueda. FashionUnited no asume ninguna responsabilidad por el contenido de cualquier oferta de empleo o sitio web que sea incluido en los resultados de búsqueda de FashionUnited.</p></header></div><div><header><h2>Noticias y Empleos de Moda en Perú</h2><p>Trabajar en moda, Diseño, Prácticas, Ofertas de Empleo, Noticias del sector moda e información para profesionales de la moda. Anuncios de trabajo y noticias de moda en Perú, Chile, Colombia, Mexico, Perú. Ferias, eventos y novedades de moda.</p></header></div>'
+  [footer.news]
+    title = "Noticias"
+    text1 = "Noticias moda"
+    url1 = "/noticias/moda/"
+    text2 = "Personal"
+    url2 =  "/en/search?searchword=ccpage"
+    text3 = "Noticias retail"
+    url3  = "/noticias/retail/"
+    text4 = "Noticias gente"
+    url4  = "/noticias/gente/"
+    text5 = "Noticias empresas"
+    url5  = "/noticias/empresas/"
+    text6 = "Noticias cultura"
+    url6  = "/noticias/cultura/"
+    text7 = "Noticias ferias"
+    url7  = "/noticias/ferias/"
+    text8 = "Moda Estadísticas"
+    url8   = "/estadisticas-de-consumo-y-ventas-de-la-moda-en-espana"
+    text9 = "Económico"
+    url9 = "/en/search?searchword=economia"
+  [footer.executive]
+    title = "Carreras de moda"
+  [footer.events]
+    title = "Eventos"
+    text1 = "Lookbook"
+    url1 = "https://www.fashionunited.com/my/en/component/jwallpapers/special/2-the-newest"
+  [footer.connect]
+    title = "Conectar"
+    text1 = "MyFashionUnited"
+    url1 = "https://www.fashionunited.com/my"
+    text2 = "Fashion Forum"
+    url2 = "https://www.fashionunited.com/my/forum/5-english?lang=en"
+    text3 = "YouTube"
+    url3 = "https://www.youtube.com/fashionunited"
+    text4 = "Facebook"
+    url4 = "https://www.facebook.com/FashionUnited"
+    text5 = "Twitter"
+    url5 = "http://twitter.com/FashionUnited"
+    text6 = "LinkedIn"
+    url6 = "https://www.linkedin.com/groups/FashionUnited-International-Fashion-Network-2202236?trk=myg_ugrp_ovr"
+    text7 = "Instagram"
+    url7 = "https://instagram.com/fashionunitedhq/"
+  [footer.about]
+    title = "Acerca de"
+    text1 = "FashionUnited"
+    url1 = "https://fashionunited.info/"
+    text2 = "Contacto"
+    url2 = "https://fashionunited.info/contact"
+    text4 = "Privacy"
+    url4 = "https://fashionunited.info/privacy"
+  [footer.more_info]
+   title = "Más información"
+   text1 = " | Trabajos en moda | Noticias de moda | Hecho con "
+   text2 = " <FashionUnited> |"
+   text3 = "Part of the FashionUnited Group | "
+   text4 = "www.FashionUnited.info"
+   text5 = "FashionUnited"
+   url = "https://fashionunited.info/"
+# Corporate information
+copyright = "&copy; landing.fashionunited.se 2016"
+author = "landing.fashionunited.se"
