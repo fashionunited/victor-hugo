@@ -1,7 +1,7 @@
 ---
 title: "France and Italy dominate Deloitte’s list of top 100 largest luxury companies"
 date: 2018-06-01T16:16:03+02:00
-draft: true
+draft: false
 ---
 
 Businesses from France and Italy dominate Deloitte’s annual list of Top 100 luxury goods companies once again. The latest report covers the luxury goods sector in fiscal year 2016 (ending on June 30, 2017). Italy leads in number of companies making the list (24), but the nine French corporations that have made the top 100 represent almost 25 percent of all sales in the sector.
